@@ -1,6 +1,7 @@
 class Tile
 
     attr_reader :value, :given
+    attr_writer :given
     def initialize(num = 0)
         @value = num
         @given = num != 0 ? true : false
